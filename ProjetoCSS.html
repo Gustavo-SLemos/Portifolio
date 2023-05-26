@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gustavo Lemos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="botao.png" alt="Logo Gustavo Lemos">
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/gustavo-slemos">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:gustavo.lemossc@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/51998816850">Whatsapp</a>
+
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Gustavo Lemos</h1>
+                <h5>Front-end Developer</h5>
+                
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+                    
+                </i>
+
+            
+                
+            </div>
+            <div style="display: none" id="about">
+                Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNISC e fazendo o Bootcamp de programação Front-End na Gama Academy onde estudo e faço projetos relacionadas à área, em HTML, CSS, JavaScript, React, entre outros.
+                <br>
+                <br>
+Sou um profissional com 9 anos de experiência na área contábil, mais 5 anos empreendendo e agora estou em fase de transição de carreira para a área de tecnologia.
+<br>
+<br>
+Nas experiências anteriores onde tive a oportunidade de trabalhar 6 anos na área fiscal do Sicredi, pude desenvolver minha comunicação através do atendimento aos colaboradores de mais de 100 cooperativas de crédito, além disso, destaco a participação em melhorias para a área fiscal, como por exemplo a mudança do sistema de aprovação dos pagamentos de tributos físicos, o que contribuiu com a agilidade e segurança das aprovações feitas pelos gerentes de área.
+<br>
+<br>
+No Sicredi também tive a oportunidade de contribuir com um projeto pioneiro, onde implantamos a metodologia ágil (Scrum) na área fiscal. Neste projeto em específico fui o responsável pela criação e aplicação de treinamento para os colegas da área.
+<br>
+<br>
+Como empreendedor desenvolvi skills técnicas mas principalmente as soft skills, como resiliência, auto-gerenciamento e a vontade de aprender diariamente. Nesse tempo criei uma empresa de design e gerenciamento de redes sociais que me permitiu elaborar cada aspecto da empresa e trabalhar diretamente com clientes.
+
+            </div>
+            <div class="form">
+                <div>
+                    <p>
+                        deixe seu contato!
+                    </p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email">
+                    <button>enviar!</button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
